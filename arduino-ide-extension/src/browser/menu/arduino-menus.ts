@@ -25,6 +25,9 @@ export namespace ArduinoMenus {
     export const EXAMPLES__CURRENT_BOARD_GROUP = [...FILE__EXAMPLES_SUBMENU, '2_current_board'];
     export const EXAMPLES__USER_LIBS_GROUP = [...FILE__EXAMPLES_SUBMENU, '3_user_libs'];
 
+    // -- File / Preferences
+    export const FILE__SETTINGS_SUBMENU = [...FILE__SETTINGS_GROUP, '0_preferences'];
+
     // -- Edit
     // `Copy`, `Copy to Forum`, `Paste`, etc.
     // Note: `1_undo` is the first group from Theia, we start with `2`

@@ -33,9 +33,10 @@ export class Settings extends SketchContribution {
     }
 
     registerMenus(registry: MenuModelRegistry): void {
-        registry.registerMenuAction(ArduinoMenus.FILE__SETTINGS_GROUP, {
+        registry.registerSubmenu(ArduinoMenus.FILE__SETTINGS_SUBMENU, 'Preferences...', { order: '1' });
+        registry.registerMenuAction(ArduinoMenus.FILE__SETTINGS_SUBMENU, {
             commandId: Settings.Commands.OPEN.id,
-            label: 'Preferences...',
+            label: 'Settings...',
             order: '0'
         });
     }
